@@ -1,0 +1,19 @@
+// @author Stanislav Kalashnik <darkpark.main@gmail.com>
+// @license GNU GENERAL PUBLIC LICENSE Version 3
+
+/* spa-component-checkbox: release */
+.component.checkBox {
+    cursor:           pointer;
+    display:          inline-block;
+    width:            $size;
+    height:           $size;
+    line-height:      $size;
+    border: 2px solid #888;
+    background-color: #bbb;
+    // hack to get rid of gap
+    vertical-align:   bottom;
+
+    &.checked {
+        background-color: orange;
+    }
+}
