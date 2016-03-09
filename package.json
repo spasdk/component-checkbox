@@ -15,6 +15,9 @@
     "dependencies": {
         "spa-component": "spasdk/component"
     },
+    "devDependencies": {
+        "spa-eslint-config": "spasdk/eslint-config"
+    },
     "keywords": [
         "spa",
         "spasdk",
