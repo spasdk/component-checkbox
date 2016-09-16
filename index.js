@@ -33,7 +33,7 @@ function CheckBox ( config ) {
     config = config || {};
 
     console.assert(typeof this === 'object', 'must be constructed via new');
-    
+
     if ( DEVELOP ) {
         if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
         // init parameters checks
@@ -42,7 +42,7 @@ function CheckBox ( config ) {
     }
 
     // set default className if classList property empty or undefined
-    config.className = 'checkBox ' + (config.className || '');
+    //config.className = 'checkBox ' + (config.className || '');
 
     // state
     this.value = !!config.value;
@@ -76,6 +76,9 @@ function CheckBox ( config ) {
 // inheritance
 CheckBox.prototype = Object.create(Component.prototype);
 CheckBox.prototype.constructor = CheckBox;
+
+// set component name
+CheckBox.prototype.name = 'spa-component-checkbox';
 
 
 /**

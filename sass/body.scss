@@ -1,0 +1,18 @@
+// @license The MIT License (MIT)
+// @copyright Stanislav Kalashnik <darkpark.main@gmail.com>
+
+@mixin spa-component-checkbox {
+    cursor:           pointer;
+    display:          inline-block;
+    width:            $size;
+    height:           $size;
+    line-height:      $size;
+    border: 2px solid #888;
+    background-color: #bbb;
+    // hack to get rid of gap
+    vertical-align:   bottom;
+
+    &.checked {
+        background-color: orange;
+    }
+}
