@@ -8,6 +8,7 @@
 'use strict';
 
 var Component = require('spa-component'),
+    keys      = require('spa-keys'),
     groups    = {};  // set of groups with linked components;
 
 
@@ -98,11 +99,11 @@ CheckBox.prototype.defaultEvents = {
     /**
      * Default method to handle keyboard keydown events.
      *
-     * @param {Event} event generated event
+     * @param {Object} event generated event
      */
     keydown: function ( event ) {
         // emulate click
-        if ( event.keyCode === 13 ) {
+        if ( event.code === keys.enter ) {
             this.set(!this.value);
         }
     }
