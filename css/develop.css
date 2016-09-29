@@ -12,6 +12,8 @@
     outline-offset: -1px; }
     .spa-component-checkbox.hidden {
         display: none; }
+    .spa-component-checkbox.grouped {
+        border-radius: 15px; }
     .spa-component-checkbox.checked {
         background-color: orange; }
     .spa-component-checkbox.focus {

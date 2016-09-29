@@ -53,14 +53,14 @@ function CheckBox ( config ) {
         config.className += ' checked';
     }
 
-    // parent constructor call
-    Component.call(this, config);
-
     // group name to work synchronously with other checkboxes
     this.group = null;
 
     // apply hierarchy
     if ( config.group ) {
+        // correct init styles
+        config.className += ' grouped';
+
         // save
         this.group = config.group;
 
@@ -71,6 +71,9 @@ function CheckBox ( config ) {
             groups[config.group].push(this);
         }
     }
+
+    // parent constructor call
+    Component.call(this, config);
 }
 
 

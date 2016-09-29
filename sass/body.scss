@@ -12,6 +12,10 @@
     // hack to get rid of gap
     vertical-align:   bottom;
 
+    &.grouped {
+        border-radius: ($size / 2) + 2;
+    }
+
     &.checked {
         background-color: orange;
     }
