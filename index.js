@@ -36,10 +36,16 @@ function CheckBox ( config ) {
     console.assert(typeof this === 'object', 'must be constructed via new');
 
     if ( DEVELOP ) {
-        if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
+        if ( typeof config !== 'object' ) {
+            throw new Error(__filename + ': wrong config type');
+        }
         // init parameters checks
-        if ( config.className && typeof config.className !== 'string' ) { throw new Error(__filename + ': wrong or empty config.className'); }
-        if ( config.group     && typeof config.group     !== 'string' ) { throw new Error(__filename + ': wrong or empty config.group'); }
+        if ( 'className' in config && (!config.className || typeof config.className !== 'string') ) {
+            throw new Error(__filename + ': wrong or empty config.className');
+        }
+        if ( config.group && typeof config.group !== 'string' ) {
+            throw new Error(__filename + ': wrong or empty config.group');
+        }
     }
 
     // set default className if classList property empty or undefined
@@ -126,7 +132,9 @@ CheckBox.prototype.set = function ( value ) {
     var index, length;
 
     if ( DEVELOP ) {
-        if ( arguments.length !== 1 ) { throw new Error(__filename + ': wrong arguments number'); }
+        if ( arguments.length !== 1 ) {
+            throw new Error(__filename + ': wrong arguments number');
+        }
     }
 
     if ( this.value !== value ) {
