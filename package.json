@@ -25,9 +25,10 @@
         "spa-eslint": "^1.0.0"
     },
     "keywords": [
-        "spa",
-        "spasdk",
-        "framework",
+		"spa",
+		"sdk",
+		"spasdk",
+		"framework",
         "visual",
         "component",
         "checkbox"
