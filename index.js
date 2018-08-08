@@ -9,7 +9,8 @@
 
 var Component = require('spa-component'),
     keys      = require('spa-keys'),
-    groups    = {};  // set of groups with linked components;
+    // set of groups with linked components;
+    groups    = {};
 
 
 /**
