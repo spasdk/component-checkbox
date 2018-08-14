@@ -1,6 +1,6 @@
 {
     "name": "spa-component-checkbox",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Base checkbox input implementation.",
     "author": {
         "name": "Stanislav Kalashnik",
